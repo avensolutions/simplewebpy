@@ -1,0 +1,39 @@
+#
+# Web Config for mysite.com
+#
+---
+site_description: "desc"
+site_title: "title"
+url_mappings: !!python/tuple [/, index, /index.html, index]
+end_points: 
+- 
+  class: "epclass"
+  title: "eptitle"
+  description: "epdesc"
+- 
+  class: "epclass"
+  title: "eptitle"
+  description: "epdesc"
+menus: 
+- 
+  - "menu1"
+  - "link1"
+- 
+  - "menu2"
+  - "link2"
+footer_text: "mysite.com 2015"
+db_config: 
+ dbtype: "postgres"
+ db: "testdb"
+ user: "testuser"
+ pw: "Password1"
+logSessions2db: true 
+google_analytics_config: 
+ site_id: "id"
+ site_name: "sname"
+errors: 
+ internalerror: 
+  error_text: "sometext"
+  send_mail_to: "emailaddr"
+ notfounderror: 
+  error_text: "sometext"
